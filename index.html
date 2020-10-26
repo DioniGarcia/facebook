@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.facebook.com/images/fb_icon_325x325.png" type="image/x-icon">
+    
+    <title>Facebook - Entrar o registrarse</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root{
+            font-family: 'Helvetica';
+        }
+
+    
+       
+        .content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 75vh;
+            
+            
+            width: 100%;
+            background-color: #f0f2f5;
+            
+        }
+
+        .inner{
+           
+            width: 55%;
+            height: 600px;
+            margin-left: auto;
+            margin-right:auto;
+            display: flex;
+            
+            
+        }
+        .innerFooter{
+            width: 55%;
+            background-color: #ffffff;
+            height: 18vh;
+            font-size: 1.2em;
+           
+            color: rgb(167, 167, 167);
+            margin-left: auto;
+            margin-right: auto;  
+            
+            margin-top: 2em;
+            font-family: 'Helvetica';
+            word-spacing: 15px;
+            line-height: 1.5em;
+            
+        }
+
+        .footer{
+            width: 100%;
+            
+        }
+
+        hr{
+            margin-top: 1em;
+            color: rgb(195, 195, 195);
+            
+            
+        }
+
+        .left{
+            
+            width: 60%;
+            flex-shrink: 0;
+            
+        }
+
+        .right{
+            
+            width: 40%;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        h1{
+            color: #1877f2;
+            font-size: 6em;
+            letter-spacing: -0.05em;
+            margin-top: 1em;
+        }
+
+        .teAyuda{
+            
+            font-size: 3em;
+            color: rgb(28, 30, 33);
+        }
+
+        .form{
+            background-color: #ffffff;
+            border-radius: .5em;
+            width: 90%;
+            height: 35vh;
+            box-shadow: 0px 8px 12px rgb(187, 187, 187);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        a{
+            text-decoration: none;
+            margin: 1em;
+            color: #1877f2;
+            font-size: 1.3em;
+        }
+        input{
+            width: 90%;
+            height: 15%;
+            border: 1px solid rgb(211, 212, 214);
+            border-radius: .4em;
+            color:  rgb(168, 167, 167);
+            padding: 1em;
+            font-size: 1.5em;
+            margin-top: 1em;
+
+        }
+
+        #enter{
+            margin-top: 1em;
+            background-color:#1877f2;
+            width: 90%;
+            border-radius: .5em;
+            color: white;
+            padding: .6em;
+            font-size: 1.8em;
+            border: 0;
+            font-weight: 600;
+        }
+
+        .rule{
+            border: .2px solid grey;
+            margin: .5em;
+            width: 90%;
+        }
+
+        #new{
+            margin-top: .5em;
+            background-color: #42b72a;
+            border-radius: .5em;
+            color: white;
+            padding: .8em;
+            font-size: 1.5em;
+            border: 0;
+            font-weight: 600;
+
+        }
+
+        #message{
+            display: none;
+            position: absolute;
+            width: 600px;
+            height: 400px;
+            background-color:rgba(53, 53, 53, 0.438);
+            border-radius: 2em;
+            top: 20em;
+            left: 25em;
+            color: white;
+            font-size: 2em;
+            padding: 2em;
+        }
+
+        
+
+
+
+    </style>
+
+    
+</head>
+<body>
+    <div class="content">
+
+        <div class="inner">
+            <div class="left">
+                <h1>facebook</h1>
+                <p class="teAyuda">Facebook te ayuda a comunicarte y compartir con las personas que forman parte de tu vida.</p>
+            </div>
+            <div class="right">
+                <div class="form">
+                    <input id="type1" type="text" placeholder="Correo electrónico o número de telefono"><br>
+                    <input id="type2" type="password" placeholder="Contraseña">
+                    <button id="enter">Entrar</button>
+                    <a id="account" href="#">¿Has olvidado la contraseña?</a>
+                    <div class="rule"></div>
+                    <button id="new">Crear cuenta nueva</button>
+                    
+                </div>
+                
+                <p style="margin-top: 2em; font-size: 1.3em; text-align: center; padding: 0 1em;"><b>Crea una página</b> para un personaje público, 
+                    un grupo de música o un negocio.</p>
+
+            </div>
+        </div>
+        
+    </div>
+   
+        
+    <div class="footer">
+        
+        
+        <div class="innerFooter">
+
+            <p class="footerTxt">
+                Español (España) Català English (US) Français (France) RomânăGalego Italiano Deutsch Português (Brasil)العربية हिन्दी <br> <hr>
+                Registrarte Entrar Messenger FacebookLite Watch Personas Páginas Categorías de páginas Lugares Juegos Lugares Marketplace <br>
+                FacebookPay Grupos Oculus Portal Instagram Local Recaudaciones de fondos Servicios Centro de información de votación Información <br>
+                Crear anuncio Crear página Desarrolladores Empleo Privacidad Cookies Gestión de anuncios Condiciones Ayuda <br><br>
+                
+                Facebook © 2020 <br><br>
+                
+                Learning Purposes Only (I'm a Grammar School Teacher)
+
+            </p>
+                
+
+        </div>     
+
+    </div>
+    <div id="message">
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
