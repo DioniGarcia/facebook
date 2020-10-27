@@ -162,6 +162,67 @@
             50%{ transform: rotate(360deg); }
             75%{ transform: rotate(540deg); }
         }
+
+
+        @media screen and (max-width: 600px){
+            h1{
+               font-size: 1.5em;
+               
+               margin: 1.5em 2em 1em;
+                
+            }
+
+            .teAyuda{ display: none;}
+
+            .inner{
+                flex-direction: column;
+            }
+
+            .footer{ display:none;}
+
+            .form{
+                position: relative;
+                width: 320px;
+                height: 450px;
+                left: 3.5em;
+            }
+            input{
+                font-size: .88em;
+                height: 12%;
+                background-color: rgb(243, 243, 243);
+                color:rgb(34, 34, 34)
+                
+            }
+            #crea{
+                
+                font-size: .2em;
+            }
+
+            #new{
+                font-size: 1.2em;
+            }
+
+            #enter{
+                font-size: 1.2em;
+            }
+
+            #crea{
+                display: none;
+            }
+
+            a{font-size: 1em;}
+
+            #message{
+                display: block;
+                position: relative;
+                left: 3.5em;
+                top: -19em;
+                width: 250px;
+                height: 250px;
+                font-size: 1em;
+                
+            }
+        }
         
 
 
@@ -189,7 +250,7 @@
                     
                 </div>
                 
-                <p style="margin-top: 2em; font-size: 1.3em; text-align: center; padding: 0 1em;"><b>Crea una página</b> para un personaje público, 
+                <p id="crea" style="margin-top: 2em; font-size: 1.3em; text-align: center; padding: 0 1em;"><b>Crea una página</b> para un personaje público, 
                     un grupo de música o un negocio.</p>
 
             </div>
