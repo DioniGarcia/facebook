@@ -10,18 +10,29 @@ const account = document.getElementById('account');
 
 
 sendBtn.addEventListener('click', () =>{
-    message.style.display = "block";
-    message.innerText = "Tus credenciales me las quedo!: \n\n"+text1.value+" \n"+text2.value;
+
+    if(areFilled()){
+        message.style.display = "block";
+        message.innerText = "Tus credenciales me las quedo!: \n\n"+text1.value+" \n"+text2.value;
+    }
+    
     
 })
 
 
 newBtn.addEventListener('click', () =>{
-    message.style.display = "block";
-    message.innerText = "Menuda cuenta mas buena me voy a crear con: \n\n"+text1.value+" \n"+text2.value;
+    if(areFilled()){
+        message.style.display = "block";
+        message.innerText = "Menuda cuenta mas buena me voy a crear con: \n\n"+text1.value+" \n"+text2.value;
+    }
+    
 })
 
 account.addEventListener('click', () =>{
-    alert("Crea una nueva cuenta!")
+    alert("Crea una nueva cuenta!");
 })
+
+function areFilled(){
+    return text1.value !== "" && text2.value !== "";
+}
 
